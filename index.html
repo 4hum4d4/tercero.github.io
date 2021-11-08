@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        ><title>Ejercicio Final</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+    </head>
+    <body>
+      <!--Navegador-->
+      <header class="cd-auto-hide-header">
+        <div class="logo"><a href="#0"><img src="imgs/logo personal.jpg" alt="Logo"></a></div>
+      
+        <nav class="cd-primary-nav">
+          <a href="#cd-navigation" class="nav-trigger">
+            <span>
+              <em aria-hidden="true"></em>
+              Menu
+            </span>
+          </a> <!-- .nav-trigger -->
+      
+          <ul id="cd-navigation">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Videos.html">Video</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+          </ul>
+        </nav> <!-- .cd-primary-nav -->
+      </header> <!-- .cd-auto-hide-header -->
+
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imgs/ilustracion mama 1.jpg" alt="Madre ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/mafe.jpg" alt="Mfe ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/majo.jpg" alt="Majo ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/melissa.jpg" alt="Melissa ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/camisa sebas imagen.jpg" alt="Madre ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/Celular.jpg" alt="Celular"></div>
+          <div class="swiper-slide"><img src="imgs/foto vectorizada (2).jpg" alt="ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/michael vector (2).jpg" alt="ilustracion"></div>
+          <div class="swiper-slide"><img src="imgs/lata sprite.jpg" alt="ilustracion"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+        <!--javascript Slider-->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+         <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "flip",
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <!--fin Slider-->
+
+       <!-- .cd-main-content -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+       <script>
+       if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+       </script>
+       <script src="js/main.js"></script> <!-- Resource jQuery -->
+      
+    </body>
+</html>
